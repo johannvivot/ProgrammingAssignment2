@@ -1,4 +1,4 @@
-# The function below creates a special matrix that can caches its inverse.
+# The function below creates a special matrix that can cache its inverse.
 # This special matrix contains a functions to:
 # set the value of the matrix
 # get the value of the matrix
@@ -7,10 +7,8 @@
 
 
 makeCacheMatrix <- function(x = matrix()) {
-    # initialize the inverse with null value
     invx <- NULL
   
-    # matrix setter - cleans the inverse value
     set <- function(y) {
         x <<- y
         invx <<- NULL
